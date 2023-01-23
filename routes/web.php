@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::prefix('user')->group(function () {
     Route::get('/signup', [UserController::class, 'getSignup']);
+    Route::post('/signup', [UserController::class, 'postSignup']);
+    Route::get('/profile', [UserController::class, 'showProfile']);
 });
