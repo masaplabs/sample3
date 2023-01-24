@@ -30,8 +30,8 @@ class UserController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'password' => bcrypt($request->input('password')),
-            'area' => 'required',
-            'experience' => 'required'
+            'area' => $request->input('area'),
+            'experience' => $request->input('experience')
         ]);
         
         // 保存

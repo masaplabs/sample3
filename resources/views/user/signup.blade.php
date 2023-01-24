@@ -53,7 +53,7 @@
                         1年未満
                         </label>
                         <label class="radio" for="ex2">
-                        <input type="radio" name="experience" data-toggle="radio" value=1年以上～3年未満" id="ex2" required>
+                        <input type="radio" name="experience" data-toggle="radio" value="1年以上～3年未満" id="ex2" required>
                         1年以上～3年未満
                         </label>
                         <label class="radio" for="ex3">
