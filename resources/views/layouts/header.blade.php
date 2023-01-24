@@ -14,12 +14,18 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
+                @if(Auth::check())
                 <li class="nav-item">
-                    <a class="nav-link" href="#">新規登録</a>
+                    <a class="nav-link" href="{{ route('logout') }}">ログアウト</a>
+                </li>
+                @else
+                <li class="nav-item">
+                    <a class="nav-link" href="./signup">新規登録</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ログイン</a>
+                    <a class="nav-link" href="./signin">ログイン</a>
                 </li>
+                @endif
             </ul>
         </div>
     </div>
